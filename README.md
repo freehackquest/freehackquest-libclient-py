@@ -1,5 +1,6 @@
 # libfhqcli-py
-FreeHackQuest Python Client Library
+
+FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehackquest/backend.git](https://github.com/freehackquest/backend.git)
 
 ## Example usage
 
