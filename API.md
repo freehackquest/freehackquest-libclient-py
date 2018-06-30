@@ -21,13 +21,13 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; quest id
- * hint - , required; hint text
+ * questid - integer, required; quest id
+ * hint - string, required; hint text
 
 
  #### example call method 
 
- ```response = fhq.addhint({"questid": "", "hint": ""});```
+ ```response = fhq.addhint({"questid": 0, "hint": ""});```
 
  ## answerlist
 
@@ -37,15 +37,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * page - , required; Number of page
- * onpage - , required; How much rows on page
- * questid - , optional; Filter for questid
- * userid - , optional; Filter for userid
+ * page - integer, required; Number of page
+ * onpage - integer, required; How much rows on page
+ * questid - integer, optional; Filter for questid
+ * userid - integer, optional; Filter for userid
 
 
  #### example call method 
 
- ```response = fhq.answerlist({"page": "", "onpage": "", "questid": "", "userid": ""});```
+ ```response = fhq.answerlist({"page": 0, "onpage": 10, "questid": 0, "userid": 0});```
 
  ## classbook_add_record
 
@@ -55,16 +55,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * parentid - , required; pareintid for classbook article
- * name - , required; name of article
- * content - , required; content of article
- * uuid - , optional; uuid of article
- * ordered - , optional; order of article
+ * parentid - integer, required; pareintid for classbook article
+ * name - string, required; name of article
+ * content - string, required; content of article
+ * uuid - uuid, optional; uuid of article
+ * ordered - integer, optional; order of article
 
 
  #### example call method 
 
- ```response = fhq.classbook_add_record({"parentid": "", "name": "", "content": "", "uuid": "", "ordered": ""});```
+ ```response = fhq.classbook_add_record({"parentid": 0, "name": "", "content": "", "uuid": "", "ordered": 0});```
 
  ## classbook_delete_record
 
@@ -74,12 +74,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbookid - , required; id for classbook article
+ * classbookid - integer, required; id for classbook article
 
 
  #### example call method 
 
- ```response = fhq.classbook_delete_record({"classbookid": ""});```
+ ```response = fhq.classbook_delete_record({"classbookid": 0});```
 
  ## classbook_export
 
@@ -89,9 +89,9 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * output - , required; The output file format
- * lang - , required; The output file format
- * zip - , optional; Zipping the output
+ * output - string, required; The output file format
+ * lang - string, required; The output file format
+ * zip - boolean, optional; Zipping the output
 
 
  #### example call method 
@@ -106,13 +106,13 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * classbookid - , required; id for the classbook article
- * lang - , optional; Set lang for the article
+ * classbookid - integer, required; id for the classbook article
+ * lang - string, optional; Set lang for the article
 
 
  #### example call method 
 
- ```response = fhq.classbook_info({"classbookid": "", "lang": ""});```
+ ```response = fhq.classbook_info({"classbookid": 0, "lang": ""});```
 
  ## classbook_list
 
@@ -122,14 +122,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * parentid - , required; parentid for classbook articles
- * lang - , optional; lang for classbook articles
- * search - , optional; Search string for classbook articles
+ * parentid - integer, required; parentid for classbook articles
+ * lang - string, optional; lang for classbook articles
+ * search - string, optional; Search string for classbook articles
 
 
  #### example call method 
 
- ```response = fhq.classbook_list({"parentid": "", "lang": "", "search": ""});```
+ ```response = fhq.classbook_list({"parentid": 0, "lang": "", "search": ""});```
 
  ## classbook_localization_add_record
 
@@ -139,15 +139,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbookid - , required; Classbookid for article localization
- * lang - , required; Language
- * name - , required; Article name
- * content - , required; The content of the article
+ * classbookid - integer, required; Classbookid for article localization
+ * lang - string, required; Language
+ * name - string, required; Article name
+ * content - string, required; The content of the article
 
 
  #### example call method 
 
- ```response = fhq.classbook_localization_add_record({"classbookid": "", "lang": "", "name": "", "content": ""});```
+ ```response = fhq.classbook_localization_add_record({"classbookid": 0, "lang": "", "name": "", "content": ""});```
 
  ## classbook_localization_delete_record
 
@@ -157,12 +157,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbook_localizationid - , required; Localization id
+ * classbook_localizationid - integer, required; Localization id
 
 
  #### example call method 
 
- ```response = fhq.classbook_localization_delete_record({"classbook_localizationid": ""});```
+ ```response = fhq.classbook_localization_delete_record({"classbook_localizationid": 0});```
 
  ## classbook_localization_info
 
@@ -172,12 +172,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbook_localizationid - , required; Localization id
+ * classbook_localizationid - integer, required; Localization id
 
 
  #### example call method 
 
- ```response = fhq.classbook_localization_info({"classbook_localizationid": ""});```
+ ```response = fhq.classbook_localization_info({"classbook_localizationid": 0});```
 
  ## classbook_localization_update_record
 
@@ -187,14 +187,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbook_localizationid - , required; Localization id
- * name - , required; Article name
- * content - , required; The content of the article
+ * classbook_localizationid - integer, required; Localization id
+ * name - string, required; Article name
+ * content - string, required; The content of the article
 
 
  #### example call method 
 
- ```response = fhq.classbook_localization_update_record({"classbook_localizationid": "", "name": "", "content": ""});```
+ ```response = fhq.classbook_localization_update_record({"classbook_localizationid": 0, "name": "", "content": ""});```
 
  ## classbook_propasal_prepare_merge_record
 
@@ -204,12 +204,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbook_proposal_id - , required; Proposal id
+ * classbook_proposal_id - integer, required; Proposal id
 
 
  #### example call method 
 
- ```response = fhq.classbook_propasal_prepare_merge_record({"classbook_proposal_id": ""});```
+ ```response = fhq.classbook_propasal_prepare_merge_record({"classbook_proposal_id": 0});```
 
  ## classbook_proposal_add_record
 
@@ -219,15 +219,15 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * classbookid - , required; Classbookid for an article
- * lang - , required; Language
- * name - , required; Article name
- * content - , required; The content of the article
+ * classbookid - integer, required; Classbookid for an article
+ * lang - string, required; Language
+ * name - string, required; Article name
+ * content - string, required; The content of the article
 
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_add_record({"classbookid": "", "lang": "", "name": "", "content": ""});```
+ ```response = fhq.classbook_proposal_add_record({"classbookid": 0, "lang": "", "name": "", "content": ""});```
 
  ## classbook_proposal_delete_record
 
@@ -237,12 +237,12 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * classbook_proposal_id - , required; Proposal id
+ * classbook_proposal_id - integer, required; Proposal id
 
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_delete_record({"classbook_proposal_id": ""});```
+ ```response = fhq.classbook_proposal_delete_record({"classbook_proposal_id": 0});```
 
  ## classbook_proposal_info
 
@@ -252,12 +252,12 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * classbook_proposal_id - , required; Proposal id
+ * classbook_proposal_id - integer, required; Proposal id
 
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_info({"classbook_proposal_id": ""});```
+ ```response = fhq.classbook_proposal_info({"classbook_proposal_id": 0});```
 
  ## classbook_proposal_list
 
@@ -267,13 +267,13 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * classbookid - , optional; Classbookid for an article
- * lang - , optional; Language
+ * classbookid - integer, optional; Classbookid for an article
+ * lang - string, optional; Language
 
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_list({"classbookid": "", "lang": ""});```
+ ```response = fhq.classbook_proposal_list({"classbookid": 0, "lang": ""});```
 
  ## classbook_update_record
 
@@ -283,16 +283,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * classbookid - , required; id for classbook article
- * name - , optional; name for classbook article
- * content - , optional; content for classbook article
- * ordered - , optional; ordered for classbook article
- * parentid - , optional; parentid for classbook article
+ * classbookid - integer, required; id for classbook article
+ * name - string, optional; name for classbook article
+ * content - string, optional; content for classbook article
+ * ordered - integer, optional; ordered for classbook article
+ * parentid - integer, optional; parentid for classbook article
 
 
  #### example call method 
 
- ```response = fhq.classbook_update_record({"classbookid": "", "name": "", "content": "", "ordered": "", "parentid": ""});```
+ ```response = fhq.classbook_update_record({"classbookid": 0, "name": "", "content": "", "ordered": 0, "parentid": 0});```
 
  ## createpublicevent
 
@@ -302,8 +302,8 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * type - , required; 
- * message - , required; 
+ * type - enum, required; 
+ * message - string, required; 
 
 
  #### example call method 
@@ -318,22 +318,22 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the quest
- * gameid - , required; Which game included this quest
- * name - , required; Name of the quest
- * text - , required; Description of the quest
- * score - , required; How much append to user score after solve quest by them
- * author - , required; Author of the quest
- * subject - , required; Subject must be one from types (look types)
- * answer - , required; Answer for the quest
- * answer_format - , required; Answer format for the quest
- * state - , required; State of the quest, can be: open, broken, closed
- * description_state - , required; You can add some descriptions for quest state
+ * uuid - uuid, required; Global Identificator of the quest
+ * gameid - integer, required; Which game included this quest
+ * name - string, required; Name of the quest
+ * text - string, required; Description of the quest
+ * score - integer, required; How much append to user score after solve quest by them
+ * author - string, required; Author of the quest
+ * subject - string, required; Subject must be one from types (look types)
+ * answer - string, required; Answer for the quest
+ * answer_format - string, required; Answer format for the quest
+ * state - string, required; State of the quest, can be: open, broken, closed
+ * description_state - string, required; You can add some descriptions for quest state
 
 
  #### example call method 
 
- ```response = fhq.createquest({"uuid": "", "gameid": "", "name": "", "text": "", "score": "", "author": "", "subject": "", "answer": "", "answer_format": "", "state": "", "description_state": ""});```
+ ```response = fhq.createquest({"uuid": "", "gameid": 0, "name": "", "text": "", "score": 0, "author": "", "subject": "", "answer": "", "answer_format": "", "state": "", "description_state": ""});```
 
  ## deletehint
 
@@ -343,12 +343,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * hintid - , required; hint id
+ * hintid - integer, required; hint id
 
 
  #### example call method 
 
- ```response = fhq.deletehint({"hintid": ""});```
+ ```response = fhq.deletehint({"hintid": 0});```
 
  ## deletepublicevent
 
@@ -358,12 +358,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * hintid - , required; hint id
+ * hintid - integer, required; hint id
 
 
  #### example call method 
 
- ```response = fhq.deletepublicevent({"hintid": ""});```
+ ```response = fhq.deletepublicevent({"hintid": 0});```
 
  ## feedback_add
 
@@ -373,9 +373,9 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * from - , required; From user
- * text - , required; Text of feedback
- * type - , required; Type
+ * from - email, required; From user
+ * text - string, required; Text of feedback
+ * type - string, required; Type
 
 
  #### example call method 
@@ -390,16 +390,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the Game
- * name - , required; Name of the Game
- * description - , required; Description of the Game
- * state - , required; State of the game
- * form - , required; Form of the game
- * type - , required; Type of the game
- * date_start - , required; Date start
- * date_stop - , required; Date stop
- * date_restart - , required; Date restart
- * organizators - , required; Organizators
+ * uuid - uuid, required; Global Identificator of the Game
+ * name - string, required; Name of the Game
+ * description - string, required; Description of the Game
+ * state - string, required; State of the game
+ * form - string, required; Form of the game
+ * type - string, required; Type of the game
+ * date_start - string, required; Date start
+ * date_stop - string, required; Date stop
+ * date_restart - string, required; Date restart
+ * organizators - string, required; Organizators
 
 
  #### example call method 
@@ -414,8 +414,8 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the Game
- * admin_password - , required; Admin Password
+ * uuid - uuid, required; Global Identificator of the Game
+ * admin_password - string, required; Admin Password
 
 
  #### example call method 
@@ -430,7 +430,7 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the Game
+ * uuid - uuid, required; Global Identificator of the Game
 
 
  #### example call method 
@@ -445,7 +445,7 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the Game
+ * uuid - uuid, required; Global Identificator of the Game
 
 
  #### example call method 
@@ -460,7 +460,7 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the Game
+ * uuid - uuid, required; Global Identificator of the Game
 
 
  #### example call method 
@@ -475,16 +475,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * uuid - , required; Global Identificator of the Game
- * name - , required; Name of the Game
- * description - , required; Description of the Game
- * state - , required; State of the game
- * form - , required; Form of the game
- * type - , required; Type of the game
- * date_start - , required; Date start
- * date_stop - , required; Date stop
- * date_restart - , required; Date restart
- * organizators - , required; Organizators
+ * uuid - uuid, required; Global Identificator of the Game
+ * name - string, required; Name of the Game
+ * description - string, required; Description of the Game
+ * state - string, required; State of the game
+ * form - string, required; Form of the game
+ * type - string, required; Type of the game
+ * date_start - string, required; Date start
+ * date_stop - string, required; Date stop
+ * date_restart - string, required; Date restart
+ * organizators - string, required; Organizators
 
 
  #### example call method 
@@ -499,13 +499,13 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * gameid - , required; GameID
- * image_png_base64 - , required; Image PNG in Base64
+ * gameid - integer, required; GameID
+ * image_png_base64 - string, required; Image PNG in Base64
 
 
  #### example call method 
 
- ```response = fhq.game_update_logo({"gameid": "", "image_png_base64": ""});```
+ ```response = fhq.game_update_logo({"gameid": 0, "image_png_base64": ""});```
 
  ## games
 
@@ -543,12 +543,12 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * eventid - , required; Event id
+ * eventid - integer, required; Event id
 
 
  #### example call method 
 
- ```response = fhq.getpublicevent({"eventid": ""});```
+ ```response = fhq.getpublicevent({"eventid": 0});```
 
  ## hints
 
@@ -558,12 +558,12 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest id
+ * questid - integer, required; Quest id
 
 
  #### example call method 
 
- ```response = fhq.hints({"questid": ""});```
+ ```response = fhq.hints({"questid": 0});```
 
  ## leaks_add
 
@@ -573,15 +573,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * gameid - , required; Id of the game
- * name - , required; Visible part of the content
- * content - , required; Content of the leak
- * score - , required; Price of the leak
+ * gameid - integer, required; Id of the game
+ * name - string, required; Visible part of the content
+ * content - string, required; Content of the leak
+ * score - integer, required; Price of the leak
 
 
  #### example call method 
 
- ```response = fhq.leaks_add({"gameid": "", "name": "", "content": "", "score": ""});```
+ ```response = fhq.leaks_add({"gameid": 0, "name": "", "content": "", "score": 0});```
 
  ## leaks_buy
 
@@ -591,12 +591,12 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **no**
 
  #### Input params 
 
- * id - , required; Leak id
+ * id - integer, required; Leak id
 
 
  #### example call method 
 
- ```response = fhq.leaks_buy({"id": ""});```
+ ```response = fhq.leaks_buy({"id": 0});```
 
  ## leaks_delete
 
@@ -606,12 +606,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * id - , required; Leak id
+ * id - integer, required; Leak id
 
 
  #### example call method 
 
- ```response = fhq.leaks_delete({"id": ""});```
+ ```response = fhq.leaks_delete({"id": 0});```
 
  ## leaks_list
 
@@ -621,13 +621,13 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * page - , required; Number of page
- * onpage - , required; How much rows in one page
+ * page - integer, required; Number of page
+ * onpage - integer, required; How much rows in one page
 
 
  #### example call method 
 
- ```response = fhq.leaks_list({"page": "", "onpage": ""});```
+ ```response = fhq.leaks_list({"page": 0, "onpage": 10});```
 
  ## leaks_update
 
@@ -637,15 +637,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * id - , required; Leak id
- * name - , optional; Visible part of the content
- * content - , optional; Content of the leak
- * score - , optional; Price of the leak
+ * id - integer, required; Leak id
+ * name - string, optional; Visible part of the content
+ * content - string, optional; Content of the leak
+ * score - integer, optional; Price of the leak
 
 
  #### example call method 
 
- ```response = fhq.leaks_update({"id": "", "name": "", "content": "", "score": ""});```
+ ```response = fhq.leaks_update({"id": 0, "name": "", "content": "", "score": 0});```
 
  ## login
 
@@ -655,8 +655,8 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### Input params 
 
- * email - , required; E-mail
- * password - , required; Password
+ * email - string, required; E-mail
+ * password - string, required; Password
 
 
  #### example call method 
@@ -671,8 +671,8 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * name - , required; Container name
- * action - , required; Actions: create, start, stop and delete container
+ * name - string, required; Container name
+ * action - string, required; Actions: create, start, stop and delete container
 
 
  #### example call method 
@@ -687,8 +687,8 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * name - , required; Container name
- * get - , optional; Requested information
+ * name - string, required; Container name
+ * get - string, optional; Requested information
 
 
  #### example call method 
@@ -731,9 +731,9 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * to - , required; E-mail of the recipient
- * subject - , required; Subject of the message
- * body - , required; Body of the message
+ * to - email, required; E-mail of the recipient
+ * subject - string, required; Subject of the message
+ * body - string, required; Body of the message
 
 
  #### example call method 
@@ -748,16 +748,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * filter_email - , optional; Filter by email
- * filter_subject - , optional; Filter by subject
- * filter_message - , optional; Filter by message
- * onpage - , optional; On page
- * page - , optional; page
+ * filter_email - string, optional; Filter by email
+ * filter_subject - string, optional; Filter by subject
+ * filter_message - string, optional; Filter by message
+ * onpage - integer, optional; On page
+ * page - integer, optional; page
 
 
  #### example call method 
 
- ```response = fhq.mails_list({"filter_email": "", "filter_subject": "", "filter_message": "", "onpage": "", "page": ""});```
+ ```response = fhq.mails_list({"filter_email": "", "filter_subject": "", "filter_message": "", "onpage": 10, "page": 0});```
 
  ## public_info
 
@@ -781,13 +781,13 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * page - , required; Number of page
- * onpage - , required; How much rows in one page
+ * page - integer, required; Number of page
+ * onpage - integer, required; How much rows in one page
 
 
  #### example call method 
 
- ```response = fhq.publiceventslist({"page": "", "onpage": ""});```
+ ```response = fhq.publiceventslist({"page": 0, "onpage": 10});```
 
  ## quest
 
@@ -797,12 +797,12 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest ID
+ * questid - integer, required; Quest ID
 
 
  #### example call method 
 
- ```response = fhq.quest({"questid": ""});```
+ ```response = fhq.quest({"questid": 0});```
 
  ## quest_delete
 
@@ -812,12 +812,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest ID
+ * questid - integer, required; Quest ID
 
 
  #### example call method 
 
- ```response = fhq.quest_delete({"questid": ""});```
+ ```response = fhq.quest_delete({"questid": 0});```
 
  ## quest_pass
 
@@ -827,13 +827,13 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest ID
- * answer - , required; Answer
+ * questid - integer, required; Quest ID
+ * answer - string, required; Answer
 
 
  #### example call method 
 
- ```response = fhq.quest_pass({"questid": "", "answer": ""});```
+ ```response = fhq.quest_pass({"questid": 0, "answer": ""});```
 
  ## quest_proposal
 
@@ -843,19 +843,19 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * gameid - , required; Which game included this quest
- * name - , required; Name of the quest
- * text - , required; Description of the quest
- * score - , required; How much append to user score after solve quest by them
- * author - , required; Author of the quest
- * subject - , required; Subject must be one from types (look types)
- * answer - , required; Answer for the quest
- * answer_format - , required; Answer format for the quest
+ * gameid - integer, required; Which game included this quest
+ * name - string, required; Name of the quest
+ * text - string, required; Description of the quest
+ * score - integer, required; How much append to user score after solve quest by them
+ * author - string, required; Author of the quest
+ * subject - string, required; Subject must be one from types (look types)
+ * answer - string, required; Answer for the quest
+ * answer_format - string, required; Answer format for the quest
 
 
  #### example call method 
 
- ```response = fhq.quest_proposal({"gameid": "", "name": "", "text": "", "score": "", "author": "", "subject": "", "answer": "", "answer_format": ""});```
+ ```response = fhq.quest_proposal({"gameid": 0, "name": "", "text": "", "score": 0, "author": "", "subject": "", "answer": "", "answer_format": ""});```
 
  ## quest_statistics
 
@@ -865,12 +865,12 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest ID
+ * questid - integer, required; Quest ID
 
 
  #### example call method 
 
- ```response = fhq.quest_statistics({"questid": ""});```
+ ```response = fhq.quest_statistics({"questid": 0});```
 
  ## quest_update
 
@@ -880,21 +880,21 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest ID
- * name - , optional; Name of the quest
- * gameid - , optional; Which game included this quest
- * text - , optional; Description of the quest
- * score - , optional; How much append to user score after solve quest by them
- * subject - , optional; Subject must be one from types (look types)
- * answer - , optional; Answer for the quest
- * answer_format - , optional; Answer format for the quest
- * state - , optional; State of the quest, can be: open, broken, closed
- * description_state - , optional; You can add some descriptions for quest state
+ * questid - integer, required; Quest ID
+ * name - string, optional; Name of the quest
+ * gameid - integer, optional; Which game included this quest
+ * text - string, optional; Description of the quest
+ * score - integer, optional; How much append to user score after solve quest by them
+ * subject - string, optional; Subject must be one from types (look types)
+ * answer - string, optional; Answer for the quest
+ * answer_format - string, optional; Answer format for the quest
+ * state - string, optional; State of the quest, can be: open, broken, closed
+ * description_state - string, optional; You can add some descriptions for quest state
 
 
  #### example call method 
 
- ```response = fhq.quest_update({"questid": "", "name": "", "gameid": "", "text": "", "score": "", "subject": "", "answer": "", "answer_format": "", "state": "", "description_state": ""});```
+ ```response = fhq.quest_update({"questid": 0, "name": "", "gameid": 0, "text": "", "score": 0, "subject": "", "answer": "", "answer_format": "", "state": "", "description_state": ""});```
 
  ## quests
 
@@ -904,7 +904,7 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * subject - , optional; Filter by subject
+ * subject - string, optional; Filter by subject
 
 
  #### example call method 
@@ -919,13 +919,13 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * onpage - , optional; On page
- * page - , optional; page
+ * onpage - integer, optional; On page
+ * page - integer, optional; page
 
 
  #### example call method 
 
- ```response = fhq.quests_proposal_list({"onpage": "", "page": ""});```
+ ```response = fhq.quests_proposal_list({"onpage": 10, "page": 0});```
 
  ## quests_subjects
 
@@ -949,8 +949,8 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### Input params 
 
- * email - , required; E-mail
- * university - , required; University
+ * email - email, required; E-mail
+ * university - string, required; University
 
 
  #### example call method 
@@ -965,13 +965,13 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * page - , required; Number of page
- * onpage - , required; How much rows in one page
+ * page - integer, required; Number of page
+ * onpage - integer, required; How much rows in one page
 
 
  #### example call method 
 
- ```response = fhq.scoreboard({"page": "", "onpage": ""});```
+ ```response = fhq.scoreboard({"page": 0, "onpage": 10});```
 
  ## sendchatmessage
 
@@ -1037,8 +1037,8 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * name - , required; name of setting
- * value - , required; value of setting
+ * name - string, required; name of setting
+ * value - any, required; value of setting
 
 
  #### example call method 
@@ -1053,7 +1053,7 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### Input params 
 
- * token - , optional; Auth token
+ * token - string, optional; Auth token
 
 
  #### example call method 
@@ -1068,12 +1068,12 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * userid - , required; User ID
+ * userid - integer, required; User ID
 
 
  #### example call method 
 
- ```response = fhq.updateuserlocation({"userid": ""});```
+ ```response = fhq.updateuserlocation({"userid": 0});```
 
  ## user
 
@@ -1083,12 +1083,12 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * userid - , optional; Id of user
+ * userid - integer, optional; Id of user
 
 
  #### example call method 
 
- ```response = fhq.user({"userid": ""});```
+ ```response = fhq.user({"userid": 0});```
 
  ## user_change_password
 
@@ -1098,8 +1098,8 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * password_old - , required; Old password
- * password_new - , required; New password
+ * password_old - string, required; Old password
+ * password_new - string, required; New password
 
 
  #### example call method 
@@ -1114,11 +1114,11 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * email - , required; User's E-mail
- * nick - , required; User's nick
- * password - , required; Password
- * role - , required; User's role
- * university - , optional; University
+ * email - string, required; User's E-mail
+ * nick - string, required; User's nick
+ * password - string, required; Password
+ * role - string, required; User's role
+ * university - string, optional; University
 
 
  #### example call method 
@@ -1133,13 +1133,13 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * userid - , required; User's id
- * password - , required; Admin's password
+ * userid - integer, required; User's id
+ * password - string, required; Admin's password
 
 
  #### example call method 
 
- ```response = fhq.user_delete({"userid": "", "password": ""});```
+ ```response = fhq.user_delete({"userid": 0, "password": ""});```
 
  ## user_reset_password
 
@@ -1149,7 +1149,7 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### Input params 
 
- * email - , required; E-mail
+ * email - email, required; E-mail
 
 
  #### example call method 
@@ -1164,12 +1164,12 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * userid - , required; Id of user
+ * userid - integer, required; Id of user
 
 
  #### example call method 
 
- ```response = fhq.user_skills({"userid": ""});```
+ ```response = fhq.user_skills({"userid": 0});```
 
  ## user_update
 
@@ -1179,15 +1179,15 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * userid - , required; Id of user
- * nick - , optional; Nick of user
- * university - , optional; University of user
- * about - , optional; About of user
+ * userid - integer, required; Id of user
+ * nick - string, optional; Nick of user
+ * university - string, optional; University of user
+ * about - string, optional; About of user
 
 
  #### example call method 
 
- ```response = fhq.user_update({"userid": "", "nick": "", "university": "", "about": ""});```
+ ```response = fhq.user_update({"userid": 0, "nick": "", "university": "", "about": ""});```
 
  ## users
 
@@ -1197,15 +1197,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### Input params 
 
- * filter_text - , optional; Filter by user email or nick
- * filter_role - , optional; Filter by user role
- * onpage - , optional; On page
- * page - , optional; page
+ * filter_text - string, optional; Filter by user email or nick
+ * filter_role - string, optional; Filter by user role
+ * onpage - integer, optional; On page
+ * page - integer, optional; page
 
 
  #### example call method 
 
- ```response = fhq.users({"filter_text": "", "filter_role": "", "onpage": "", "page": ""});```
+ ```response = fhq.users({"filter_text": "", "filter_role": "", "onpage": 10, "page": 0});```
 
  ## writeups
 
@@ -1215,10 +1215,10 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### Input params 
 
- * questid - , required; Quest ID
+ * questid - integer, required; Quest ID
 
 
  #### example call method 
 
- ```response = fhq.writeups({"questid": ""});```
+ ```response = fhq.writeups({"questid": 0});```
 
