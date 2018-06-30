@@ -16,7 +16,7 @@ if resp['result'] == 'FAIL':
   print('Could not login as user (1)')
   
 print("user info: " + str(resp));
-q = fhq.quest(self, {"questid": 148})
+q = fhq.quest({"questid": 148})
 print("quest: " + str(q));
 fhq.close();
 ```
