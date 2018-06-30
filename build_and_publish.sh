@@ -9,5 +9,5 @@ rm -rf dist
 rm -rf libfhqcli.egg-info
 
 python setup.py sdist bdist_wheel
-python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-
+# python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
