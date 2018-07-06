@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='libfhqcli',
-    version='0.2.15',
+    version='0.2.16',
     author='FreeHackQuest Team',
     author_email='freehackquest@gmail.com',
     description='FreeHackQuest Python Client Library for fhq-server',
