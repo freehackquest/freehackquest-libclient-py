@@ -4,7 +4,7 @@ FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehack
 
 ## Install
 ```
-pip install libfhqlib
+pip install libfhqcli
 ```
 
 
