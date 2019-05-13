@@ -16,6 +16,8 @@ fhq.close()
 <details>
 <summary>addhint</summary>
 
+## addhint
+
 Methid add hint to quest
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -39,6 +41,8 @@ response = fhq.addhint({
 
 <details>
 <summary>answerlist</summary>
+
+## answerlist
 
 Return user answers list
 
@@ -68,6 +72,8 @@ response = fhq.answerlist({
 <details>
 <summary>chat_latest_messages</summary>
 
+## chat_latest_messages
+
 Method will be send chat message and it sent to another users
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -88,6 +94,8 @@ response = fhq.chat_latest_messages({
 
 <details>
 <summary>chat_send_message</summary>
+
+## chat_send_message
 
 Method will be send chat message and it sent to another users
 
@@ -112,6 +120,8 @@ response = fhq.chat_send_message({
 
 <details>
 <summary>classbook_add_record</summary>
+
+## classbook_add_record
 
 Adds a new article with the specified name, content, and id.
 
@@ -143,6 +153,8 @@ response = fhq.classbook_add_record({
 <details>
 <summary>classbook_delete_record</summary>
 
+## classbook_delete_record
+
 Delete a article with a given classbookid
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -164,6 +176,8 @@ response = fhq.classbook_delete_record({
 
 <details>
 <summary>classbook_export</summary>
+
+## classbook_export
 
 Export classbook's articles to html or markdown, optionally in zip archive.
 
@@ -191,6 +205,8 @@ response = fhq.classbook_export({
 <details>
 <summary>classbook_info</summary>
 
+## classbook_info
+
 Return name and content, langs, path classbook article with a given id
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -214,6 +230,8 @@ response = fhq.classbook_info({
 
 <details>
 <summary>classbook_list</summary>
+
+## classbook_list
 
 Return list of classbook articles
 
@@ -240,6 +258,8 @@ response = fhq.classbook_list({
 
 <details>
 <summary>classbook_localization_add_record</summary>
+
+## classbook_localization_add_record
 
 Add a new article localization for the English version
 
@@ -269,6 +289,8 @@ response = fhq.classbook_localization_add_record({
 <details>
 <summary>classbook_localization_delete_record</summary>
 
+## classbook_localization_delete_record
+
 Delete an article localization
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -291,6 +313,8 @@ response = fhq.classbook_localization_delete_record({
 <details>
 <summary>classbook_localization_info</summary>
 
+## classbook_localization_info
+
 Find and display localization for an article by classbookid
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -312,6 +336,8 @@ response = fhq.classbook_localization_info({
 
 <details>
 <summary>classbook_localization_update_record</summary>
+
+## classbook_localization_update_record
 
 Update table with localization by classbookid
 
@@ -339,6 +365,8 @@ response = fhq.classbook_localization_update_record({
 <details>
 <summary>classbook_propasal_prepare_merge_record</summary>
 
+## classbook_propasal_prepare_merge_record
+
 Prepare to merge updating requests
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -360,6 +388,8 @@ response = fhq.classbook_propasal_prepare_merge_record({
 
 <details>
 <summary>classbook_proposal_add_record</summary>
+
+## classbook_proposal_add_record
 
 Propose an update of article
 
@@ -389,6 +419,8 @@ response = fhq.classbook_proposal_add_record({
 <details>
 <summary>classbook_proposal_delete_record</summary>
 
+## classbook_proposal_delete_record
+
 Delete a proposal of updating an article
 
 Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
@@ -411,6 +443,8 @@ response = fhq.classbook_proposal_delete_record({
 <details>
 <summary>classbook_proposal_info</summary>
 
+## classbook_proposal_info
+
 Find and display all proposal data by id
 
 Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
@@ -432,6 +466,8 @@ response = fhq.classbook_proposal_info({
 
 <details>
 <summary>classbook_proposal_list</summary>
+
+## classbook_proposal_list
 
 Display list of proposals by classbookid
 
@@ -456,6 +492,8 @@ response = fhq.classbook_proposal_list({
 
 <details>
 <summary>classbook_update_record</summary>
+
+## classbook_update_record
 
 Update a article with a given classbookid
 
@@ -487,6 +525,8 @@ response = fhq.classbook_update_record({
 <details>
 <summary>createpublicevent</summary>
 
+## createpublicevent
+
 Create the public event
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -510,6 +550,8 @@ response = fhq.createpublicevent({
 
 <details>
 <summary>createquest</summary>
+
+## createquest
 
 Method will be create new quest
 
@@ -555,6 +597,8 @@ response = fhq.createquest({
 <details>
 <summary>deletehint</summary>
 
+## deletehint
+
 Method for delete hint from quest
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -577,6 +621,8 @@ response = fhq.deletehint({
 <details>
 <summary>deletepublicevent</summary>
 
+## deletepublicevent
+
 Delete public event
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -598,6 +644,8 @@ response = fhq.deletepublicevent({
 
 <details>
 <summary>feedback_add</summary>
+
+## feedback_add
 
 Create the feedback
 
@@ -624,6 +672,8 @@ response = fhq.feedback_add({
 
 <details>
 <summary>game_create</summary>
+
+## game_create
 
 Create the game
 
@@ -665,6 +715,8 @@ response = fhq.game_create({
 <details>
 <summary>game_delete</summary>
 
+## game_delete
+
 Remove game and all quests
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -689,6 +741,8 @@ response = fhq.game_delete({
 <details>
 <summary>game_export</summary>
 
+## game_export
+
 Export the game
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -710,6 +764,8 @@ response = fhq.game_export({
 
 <details>
 <summary>game_import</summary>
+
+## game_import
 
 Import game
 
@@ -733,6 +789,8 @@ response = fhq.game_import({
 <details>
 <summary>game_info</summary>
 
+## game_info
+
 Return game info
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -754,6 +812,8 @@ response = fhq.game_info({
 
 <details>
 <summary>game_update</summary>
+
+## game_update
 
 Update game info
 
@@ -795,6 +855,8 @@ response = fhq.game_update({
 <details>
 <summary>game_update_logo</summary>
 
+## game_update_logo
+
 Update game logo
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -819,6 +881,8 @@ response = fhq.game_update_logo({
 <details>
 <summary>games</summary>
 
+## games
+
 Method returned list of games
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -840,6 +904,8 @@ response = fhq.games({
 <details>
 <summary>getmap</summary>
 
+## getmap
+
 Returned coordinate list
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -860,6 +926,8 @@ response = fhq.getmap({
 
 <details>
 <summary>getpublicevent</summary>
+
+## getpublicevent
 
 Return public event info by id
 
@@ -883,6 +951,8 @@ response = fhq.getpublicevent({
 <details>
 <summary>hints</summary>
 
+## hints
+
 Return list of hints
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -904,6 +974,8 @@ response = fhq.hints({
 
 <details>
 <summary>leaks_add</summary>
+
+## leaks_add
 
 Method adds a leak
 
@@ -935,6 +1007,8 @@ response = fhq.leaks_add({
 <details>
 <summary>leaks_buy</summary>
 
+## leaks_buy
+
 Method buys a leak
 
 Access: unauthorized - **no**,  user - **yes**,  admin - **no**
@@ -957,6 +1031,8 @@ response = fhq.leaks_buy({
 <details>
 <summary>leaks_delete</summary>
 
+## leaks_delete
+
 Method deletes a leak
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -978,6 +1054,8 @@ response = fhq.leaks_delete({
 
 <details>
 <summary>leaks_list</summary>
+
+## leaks_list
 
 Method returns list of leaks
 
@@ -1002,6 +1080,8 @@ response = fhq.leaks_list({
 
 <details>
 <summary>leaks_update</summary>
+
+## leaks_update
 
 Method updates a leak
 
@@ -1031,6 +1111,8 @@ response = fhq.leaks_update({
 <details>
 <summary>login</summary>
 
+## login
+
 Method for login
 
 Access: unauthorized - **yes**,  user - **no**,  admin - **no**
@@ -1054,6 +1136,8 @@ response = fhq.login({
 
 <details>
 <summary>lxd_containers</summary>
+
+## lxd_containers
 
 Any actions with the container. Actions: create, start, stop and delete container
 
@@ -1079,6 +1163,8 @@ response = fhq.lxd_containers({
 <details>
 <summary>lxd_exec</summary>
 
+## lxd_exec
+
 Exec command in the container with name.
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1102,6 +1188,8 @@ response = fhq.lxd_exec({
 
 <details>
 <summary>lxd_file</summary>
+
+## lxd_file
 
 Pull, push, delete file inside the container.
 
@@ -1129,6 +1217,8 @@ response = fhq.lxd_file({
 <details>
 <summary>lxd_import_container</summary>
 
+## lxd_import_container
+
 Import container from json configuration.
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1151,6 +1241,8 @@ response = fhq.lxd_import_container({
 <details>
 <summary>lxd_import_service_from_zip</summary>
 
+## lxd_import_service_from_zip
+
 Import Service from zip.
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1172,6 +1264,8 @@ response = fhq.lxd_import_service_from_zip({
 
 <details>
 <summary>lxd_info</summary>
+
+## lxd_info
 
 Get information about the orhestra, containers.
 
@@ -1197,6 +1291,8 @@ response = fhq.lxd_info({
 <details>
 <summary>lxd_list</summary>
 
+## lxd_list
+
 Get information about all containers.
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1217,6 +1313,8 @@ response = fhq.lxd_list({
 
 <details>
 <summary>lxd_open_port</summary>
+
+## lxd_open_port
 
 Opens the container port.
 
@@ -1244,6 +1342,8 @@ response = fhq.lxd_open_port({
 <details>
 <summary>lxd_start_service</summary>
 
+## lxd_start_service
+
 Start service.
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1266,6 +1366,8 @@ response = fhq.lxd_start_service({
 <details>
 <summary>mail_info</summary>
 
+## mail_info
+
 This method Will be return info of mail
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1286,6 +1388,8 @@ response = fhq.mail_info({
 
 <details>
 <summary>mail_send</summary>
+
+## mail_send
 
 Mail Send
 
@@ -1312,6 +1416,8 @@ response = fhq.mail_send({
 
 <details>
 <summary>mails_list</summary>
+
+## mails_list
 
 Mails list
 
@@ -1343,6 +1449,8 @@ response = fhq.mails_list({
 <details>
 <summary>public_info</summary>
 
+## public_info
+
 Method return public information about server
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1363,6 +1471,8 @@ response = fhq.public_info({
 
 <details>
 <summary>publiceventslist</summary>
+
+## publiceventslist
 
 Return list of public events
 
@@ -1388,6 +1498,8 @@ response = fhq.publiceventslist({
 <details>
 <summary>quest</summary>
 
+## quest
+
 Update the quest info
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1410,6 +1522,8 @@ response = fhq.quest({
 <details>
 <summary>quest_delete</summary>
 
+## quest_delete
+
 Method for delete quest
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1431,6 +1545,8 @@ response = fhq.quest_delete({
 
 <details>
 <summary>quest_pass</summary>
+
+## quest_pass
 
 Quest pass
 
@@ -1455,6 +1571,8 @@ response = fhq.quest_pass({
 
 <details>
 <summary>quest_proposal</summary>
+
+## quest_proposal
 
 Add quest proposal
 
@@ -1492,6 +1610,8 @@ response = fhq.quest_proposal({
 <details>
 <summary>quest_statistics</summary>
 
+## quest_statistics
+
 Mehtod will be return quest public statistics
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1513,6 +1633,8 @@ response = fhq.quest_statistics({
 
 <details>
 <summary>quest_update</summary>
+
+## quest_update
 
 Update the quest info
 
@@ -1558,6 +1680,8 @@ response = fhq.quest_update({
 <details>
 <summary>quests</summary>
 
+## quests
+
 Method will be returned quest list
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1579,6 +1703,8 @@ response = fhq.quests({
 
 <details>
 <summary>quests_proposal_list</summary>
+
+## quests_proposal_list
 
 Quests proposal list
 
@@ -1604,6 +1730,8 @@ response = fhq.quests_proposal_list({
 <details>
 <summary>quests_subjects</summary>
 
+## quests_subjects
+
 Method returned list of quests by subjects
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1624,6 +1752,8 @@ response = fhq.quests_subjects({
 
 <details>
 <summary>quests_writeups_delete</summary>
+
+## quests_writeups_delete
 
 This method will be remove writeup
 
@@ -1647,6 +1777,8 @@ response = fhq.quests_writeups_delete({
 <details>
 <summary>quests_writeups_list</summary>
 
+## quests_writeups_list
+
 This method will be returned list of writeups by questid
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1668,6 +1800,8 @@ response = fhq.quests_writeups_list({
 
 <details>
 <summary>quests_writeups_proposal</summary>
+
+## quests_writeups_proposal
 
 This method will be add writeup from authorized user
 
@@ -1693,6 +1827,8 @@ response = fhq.quests_writeups_proposal({
 <details>
 <summary>quests_writeups_update</summary>
 
+## quests_writeups_update
+
 This method will be update writeup approve now
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1716,6 +1852,8 @@ response = fhq.quests_writeups_update({
 
 <details>
 <summary>registration</summary>
+
+## registration
 
 Method for registration
 
@@ -1741,6 +1879,8 @@ response = fhq.registration({
 <details>
 <summary>scoreboard</summary>
 
+## scoreboard
+
 Method return scoreboard
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1765,6 +1905,8 @@ response = fhq.scoreboard({
 <details>
 <summary>server_api</summary>
 
+## server_api
+
 This method Will be return list of all handlers
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1785,6 +1927,8 @@ response = fhq.server_api({
 
 <details>
 <summary>server_info</summary>
+
+## server_info
 
 Return server private information
 
@@ -1807,6 +1951,8 @@ response = fhq.server_info({
 <details>
 <summary>server_settings</summary>
 
+## server_settings
+
 Return server settings
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1827,6 +1973,8 @@ response = fhq.server_settings({
 
 <details>
 <summary>server_settings_update</summary>
+
+## server_settings_update
 
 Update server settings
 
@@ -1852,6 +2000,8 @@ response = fhq.server_settings_update({
 <details>
 <summary>token</summary>
 
+## token
+
 Method for login by token
 
 Access: unauthorized - **yes**,  user - **no**,  admin - **no**
@@ -1874,6 +2024,8 @@ response = fhq.token({
 <details>
 <summary>updateuserlocation</summary>
 
+## updateuserlocation
+
 This method will be try update user location by lastip
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1895,6 +2047,8 @@ response = fhq.updateuserlocation({
 
 <details>
 <summary>useful_links_add</summary>
+
+## useful_links_add
 
 Method for add new useful link
 
@@ -1922,6 +2076,8 @@ response = fhq.useful_links_add({
 <details>
 <summary>useful_links_delete</summary>
 
+## useful_links_delete
+
 Method for delete link by admin
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -1948,6 +2104,8 @@ response = fhq.useful_links_delete({
 <details>
 <summary>useful_links_list</summary>
 
+## useful_links_list
+
 Method will be return list of useful links
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -1970,6 +2128,8 @@ response = fhq.useful_links_list({
 <details>
 <summary>useful_links_star</summary>
 
+## useful_links_star
+
 Method set star
 
 Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
@@ -1991,6 +2151,8 @@ response = fhq.useful_links_star({
 <details>
 <summary>useful_links_unstar</summary>
 
+## useful_links_unstar
+
 Method set unstar
 
 Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
@@ -2011,6 +2173,8 @@ response = fhq.useful_links_unstar({
 
 <details>
 <summary>useful_links_update</summary>
+
+## useful_links_update
 
 Method for update useful link
 
@@ -2040,6 +2204,8 @@ response = fhq.useful_links_update({
 <details>
 <summary>user</summary>
 
+## user
+
 Return user info
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -2061,6 +2227,8 @@ response = fhq.user({
 
 <details>
 <summary>user_change_password</summary>
+
+## user_change_password
 
 This method for change user password
 
@@ -2086,6 +2254,8 @@ response = fhq.user_change_password({
 <details>
 <summary>user_delete</summary>
 
+## user_delete
+
 Method for deleting a user
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -2110,6 +2280,8 @@ response = fhq.user_delete({
 <details>
 <summary>user_reset_password</summary>
 
+## user_reset_password
+
 Method for reset password
 
 Access: unauthorized - **yes**,  user - **no**,  admin - **no**
@@ -2132,6 +2304,8 @@ response = fhq.user_reset_password({
 <details>
 <summary>user_skills</summary>
 
+## user_skills
+
 Return user skills info
 
 Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
@@ -2153,6 +2327,8 @@ response = fhq.user_skills({
 
 <details>
 <summary>user_update</summary>
+
+## user_update
 
 Update user info
 
@@ -2184,6 +2360,8 @@ response = fhq.user_update({
 <details>
 <summary>users</summary>
 
+## users
+
 Method return list of users
 
 Access: unauthorized - **no**,  user - **no**,  admin - **yes**
@@ -2211,6 +2389,8 @@ response = fhq.users({
 
 <details>
 <summary>users_add</summary>
+
+## users_add
 
 Method for add new user
 
@@ -2243,6 +2423,8 @@ response = fhq.users_add({
 
 <details>
 <summary>users_info</summary>
+
+## users_info
 
 Return user info
 
