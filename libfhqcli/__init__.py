@@ -116,7 +116,7 @@ class FHQCli:
         return True
     
     def __looper(self, cmd_m):
-        max_time = 5*10; # 5 seconds
+        max_time = 5*10 # 5 seconds
         counter_time = 0
         cmd_result = {}
         while True:
