@@ -13,7 +13,8 @@ fhq = libfhqcli.FHQCli('ws://localhost:1234')
 fhq.close()
 ```
 
- ## addhint
+<details>
+<summary>addhint</summary>
 
 Methid add hint to quest
 
@@ -27,9 +28,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.addhint({"questid": 0, "hint": ""})```
+ ```response = fhq.addhint({
+    "questid": 0,
+    "hint": ""
+})```
 
- ## answerlist
+</details>
+
+<details>
+<summary>answerlist</summary>
 
 Return user answers list
 
@@ -45,9 +52,17 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.answerlist({"page": 0, "onpage": 10, "questid": 0, "userid": 0})```
+ ```response = fhq.answerlist({
+    "page": 0,
+    "onpage": 10,
+    "questid": 0,
+    "userid": 0
+})```
 
- ## chat_latest_messages
+</details>
+
+<details>
+<summary>chat_latest_messages</summary>
 
 Method will be send chat message and it sent to another users
 
@@ -59,9 +74,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.chat_latest_messages({})```
+ ```response = fhq.chat_latest_messages({
 
- ## chat_send_message
+})```
+
+</details>
+
+<details>
+<summary>chat_send_message</summary>
 
 Method will be send chat message and it sent to another users
 
@@ -75,9 +95,15 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.chat_send_message({"type": "", "message": ""})```
+ ```response = fhq.chat_send_message({
+    "type": "",
+    "message": ""
+})```
 
- ## classbook_add_record
+</details>
+
+<details>
+<summary>classbook_add_record</summary>
 
 Adds a new article with the specified name, content, and id.
 
@@ -94,9 +120,18 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_add_record({"parentid": 0, "name": "", "content": "", "uuid": "", "ordered": 0})```
+ ```response = fhq.classbook_add_record({
+    "parentid": 0,
+    "name": "",
+    "content": "",
+    "uuid": "",
+    "ordered": 0
+})```
 
- ## classbook_delete_record
+</details>
+
+<details>
+<summary>classbook_delete_record</summary>
 
 Delete a article with a given classbookid
 
@@ -109,9 +144,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_delete_record({"classbookid": 0})```
+ ```response = fhq.classbook_delete_record({
+    "classbookid": 0
+})```
 
- ## classbook_export
+</details>
+
+<details>
+<summary>classbook_export</summary>
 
 Export classbook's articles to html or markdown, optionally in zip archive.
 
@@ -126,9 +166,16 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_export({"output": "", "lang": "", "zip": ""})```
+ ```response = fhq.classbook_export({
+    "output": "",
+    "lang": "",
+    "zip": ""
+})```
 
- ## classbook_info
+</details>
+
+<details>
+<summary>classbook_info</summary>
 
 Return name and content, langs, path classbook article with a given id
 
@@ -142,9 +189,15 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_info({"classbookid": 0, "lang": ""})```
+ ```response = fhq.classbook_info({
+    "classbookid": 0,
+    "lang": ""
+})```
 
- ## classbook_list
+</details>
+
+<details>
+<summary>classbook_list</summary>
 
 Return list of classbook articles
 
@@ -159,9 +212,16 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_list({"parentid": 0, "lang": "", "search": ""})```
+ ```response = fhq.classbook_list({
+    "parentid": 0,
+    "lang": "",
+    "search": ""
+})```
 
- ## classbook_localization_add_record
+</details>
+
+<details>
+<summary>classbook_localization_add_record</summary>
 
 Add a new article localization for the English version
 
@@ -177,9 +237,17 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_localization_add_record({"classbookid": 0, "lang": "", "name": "", "content": ""})```
+ ```response = fhq.classbook_localization_add_record({
+    "classbookid": 0,
+    "lang": "",
+    "name": "",
+    "content": ""
+})```
 
- ## classbook_localization_delete_record
+</details>
+
+<details>
+<summary>classbook_localization_delete_record</summary>
 
 Delete an article localization
 
@@ -192,9 +260,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_localization_delete_record({"classbook_localizationid": 0})```
+ ```response = fhq.classbook_localization_delete_record({
+    "classbook_localizationid": 0
+})```
 
- ## classbook_localization_info
+</details>
+
+<details>
+<summary>classbook_localization_info</summary>
 
 Find and display localization for an article by classbookid
 
@@ -207,9 +280,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_localization_info({"classbook_localizationid": 0})```
+ ```response = fhq.classbook_localization_info({
+    "classbook_localizationid": 0
+})```
 
- ## classbook_localization_update_record
+</details>
+
+<details>
+<summary>classbook_localization_update_record</summary>
 
 Update table with localization by classbookid
 
@@ -224,9 +302,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_localization_update_record({"classbook_localizationid": 0, "name": "", "content": ""})```
+ ```response = fhq.classbook_localization_update_record({
+    "classbook_localizationid": 0,
+    "name": "",
+    "content": ""
+})```
 
- ## classbook_propasal_prepare_merge_record
+</details>
+
+<details>
+<summary>classbook_propasal_prepare_merge_record</summary>
 
 Prepare to merge updating requests
 
@@ -239,9 +324,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_propasal_prepare_merge_record({"classbook_proposal_id": 0})```
+ ```response = fhq.classbook_propasal_prepare_merge_record({
+    "classbook_proposal_id": 0
+})```
 
- ## classbook_proposal_add_record
+</details>
+
+<details>
+<summary>classbook_proposal_add_record</summary>
 
 Propose an update of article
 
@@ -257,9 +347,17 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_add_record({"classbookid": 0, "lang": "", "name": "", "content": ""})```
+ ```response = fhq.classbook_proposal_add_record({
+    "classbookid": 0,
+    "lang": "",
+    "name": "",
+    "content": ""
+})```
 
- ## classbook_proposal_delete_record
+</details>
+
+<details>
+<summary>classbook_proposal_delete_record</summary>
 
 Delete a proposal of updating an article
 
@@ -272,9 +370,14 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_delete_record({"classbook_proposal_id": 0})```
+ ```response = fhq.classbook_proposal_delete_record({
+    "classbook_proposal_id": 0
+})```
 
- ## classbook_proposal_info
+</details>
+
+<details>
+<summary>classbook_proposal_info</summary>
 
 Find and display all proposal data by id
 
@@ -287,9 +390,14 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_info({"classbook_proposal_id": 0})```
+ ```response = fhq.classbook_proposal_info({
+    "classbook_proposal_id": 0
+})```
 
- ## classbook_proposal_list
+</details>
+
+<details>
+<summary>classbook_proposal_list</summary>
 
 Display list of proposals by classbookid
 
@@ -303,9 +411,15 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_proposal_list({"classbookid": 0, "lang": ""})```
+ ```response = fhq.classbook_proposal_list({
+    "classbookid": 0,
+    "lang": ""
+})```
 
- ## classbook_update_record
+</details>
+
+<details>
+<summary>classbook_update_record</summary>
 
 Update a article with a given classbookid
 
@@ -322,9 +436,18 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.classbook_update_record({"classbookid": 0, "name": "", "content": "", "ordered": 0, "parentid": 0})```
+ ```response = fhq.classbook_update_record({
+    "classbookid": 0,
+    "name": "",
+    "content": "",
+    "ordered": 0,
+    "parentid": 0
+})```
 
- ## createpublicevent
+</details>
+
+<details>
+<summary>createpublicevent</summary>
 
 Create the public event
 
@@ -338,9 +461,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.createpublicevent({"type": "", "message": ""})```
+ ```response = fhq.createpublicevent({
+    "type": "",
+    "message": ""
+})```
 
- ## createquest
+</details>
+
+<details>
+<summary>createquest</summary>
 
 Method will be create new quest
 
@@ -364,9 +493,25 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.createquest({"uuid": "", "gameid": 0, "name": "", "text": "", "score": 0, "author": "", "subject": "", "answer": "", "answer_format": "", "state": "", "description_state": "", "copyright": ""})```
+ ```response = fhq.createquest({
+    "uuid": "",
+    "gameid": 0,
+    "name": "",
+    "text": "",
+    "score": 0,
+    "author": "",
+    "subject": "",
+    "answer": "",
+    "answer_format": "",
+    "state": "",
+    "description_state": "",
+    "copyright": ""
+})```
 
- ## deletehint
+</details>
+
+<details>
+<summary>deletehint</summary>
 
 Method for delete hint from quest
 
@@ -379,9 +524,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.deletehint({"hintid": 0})```
+ ```response = fhq.deletehint({
+    "hintid": 0
+})```
 
- ## deletepublicevent
+</details>
+
+<details>
+<summary>deletepublicevent</summary>
 
 Delete public event
 
@@ -394,9 +544,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.deletepublicevent({"eventid": 0})```
+ ```response = fhq.deletepublicevent({
+    "eventid": 0
+})```
 
- ## feedback_add
+</details>
+
+<details>
+<summary>feedback_add</summary>
 
 Create the feedback
 
@@ -411,9 +566,16 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.feedback_add({"from": "", "text": "", "type": ""})```
+ ```response = fhq.feedback_add({
+    "from": "",
+    "text": "",
+    "type": ""
+})```
 
- ## game_create
+</details>
+
+<details>
+<summary>game_create</summary>
 
 Create the game
 
@@ -435,9 +597,23 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_create({"uuid": "", "name": "", "description": "", "state": "", "form": "", "type": "", "date_start": "", "date_stop": "", "date_restart": "", "organizators": ""})```
+ ```response = fhq.game_create({
+    "uuid": "",
+    "name": "",
+    "description": "",
+    "state": "",
+    "form": "",
+    "type": "",
+    "date_start": "",
+    "date_stop": "",
+    "date_restart": "",
+    "organizators": ""
+})```
 
- ## game_delete
+</details>
+
+<details>
+<summary>game_delete</summary>
 
 Remove game and all quests
 
@@ -451,9 +627,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_delete({"uuid": "", "admin_password": ""})```
+ ```response = fhq.game_delete({
+    "uuid": "",
+    "admin_password": ""
+})```
 
- ## game_export
+</details>
+
+<details>
+<summary>game_export</summary>
 
 Export the game
 
@@ -466,9 +648,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_export({"uuid": ""})```
+ ```response = fhq.game_export({
+    "uuid": ""
+})```
 
- ## game_import
+</details>
+
+<details>
+<summary>game_import</summary>
 
 Import game
 
@@ -481,9 +668,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_import({"uuid": ""})```
+ ```response = fhq.game_import({
+    "uuid": ""
+})```
 
- ## game_info
+</details>
+
+<details>
+<summary>game_info</summary>
 
 Return game info
 
@@ -496,9 +688,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_info({"uuid": ""})```
+ ```response = fhq.game_info({
+    "uuid": ""
+})```
 
- ## game_update
+</details>
+
+<details>
+<summary>game_update</summary>
 
 Update game info
 
@@ -520,9 +717,23 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_update({"uuid": "", "name": "", "description": "", "state": "", "form": "", "type": "", "date_start": "", "date_stop": "", "date_restart": "", "organizators": ""})```
+ ```response = fhq.game_update({
+    "uuid": "",
+    "name": "",
+    "description": "",
+    "state": "",
+    "form": "",
+    "type": "",
+    "date_start": "",
+    "date_stop": "",
+    "date_restart": "",
+    "organizators": ""
+})```
 
- ## game_update_logo
+</details>
+
+<details>
+<summary>game_update_logo</summary>
 
 Update game logo
 
@@ -536,9 +747,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.game_update_logo({"uuid": "", "image_png_base64": ""})```
+ ```response = fhq.game_update_logo({
+    "uuid": "",
+    "image_png_base64": ""
+})```
 
- ## games
+</details>
+
+<details>
+<summary>games</summary>
 
 Method returned list of games
 
@@ -550,9 +767,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.games({})```
+ ```response = fhq.games({
 
- ## getmap
+})```
+
+</details>
+
+<details>
+<summary>getmap</summary>
 
 Returned coordinate list
 
@@ -564,9 +786,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.getmap({})```
+ ```response = fhq.getmap({
 
- ## getpublicevent
+})```
+
+</details>
+
+<details>
+<summary>getpublicevent</summary>
 
 Return public event info by id
 
@@ -579,9 +806,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.getpublicevent({"eventid": 0})```
+ ```response = fhq.getpublicevent({
+    "eventid": 0
+})```
 
- ## hints
+</details>
+
+<details>
+<summary>hints</summary>
 
 Return list of hints
 
@@ -594,9 +826,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.hints({"questid": 0})```
+ ```response = fhq.hints({
+    "questid": 0
+})```
 
- ## leaks_add
+</details>
+
+<details>
+<summary>leaks_add</summary>
 
 Method adds a leak
 
@@ -613,9 +850,18 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.leaks_add({"uuid": "", "game_uuid": "", "name": "", "content": "", "score": 0})```
+ ```response = fhq.leaks_add({
+    "uuid": "",
+    "game_uuid": "",
+    "name": "",
+    "content": "",
+    "score": 0
+})```
 
- ## leaks_buy
+</details>
+
+<details>
+<summary>leaks_buy</summary>
 
 Method buys a leak
 
@@ -628,9 +874,14 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **no**
 
  #### example call method 
 
- ```response = fhq.leaks_buy({"id": 0})```
+ ```response = fhq.leaks_buy({
+    "id": 0
+})```
 
- ## leaks_delete
+</details>
+
+<details>
+<summary>leaks_delete</summary>
 
 Method deletes a leak
 
@@ -643,9 +894,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.leaks_delete({"id": 0})```
+ ```response = fhq.leaks_delete({
+    "id": 0
+})```
 
- ## leaks_list
+</details>
+
+<details>
+<summary>leaks_list</summary>
 
 Method returns list of leaks
 
@@ -659,9 +915,15 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.leaks_list({"page": 0, "onpage": 10})```
+ ```response = fhq.leaks_list({
+    "page": 0,
+    "onpage": 10
+})```
 
- ## leaks_update
+</details>
+
+<details>
+<summary>leaks_update</summary>
 
 Method updates a leak
 
@@ -677,9 +939,17 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.leaks_update({"id": 0, "name": "", "content": "", "score": 0})```
+ ```response = fhq.leaks_update({
+    "id": 0,
+    "name": "",
+    "content": "",
+    "score": 0
+})```
 
- ## login
+</details>
+
+<details>
+<summary>login</summary>
 
 Method for login
 
@@ -693,9 +963,15 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### example call method 
 
- ```response = fhq.login({"email": "", "password": ""})```
+ ```response = fhq.login({
+    "email": "",
+    "password": ""
+})```
 
- ## lxd_containers
+</details>
+
+<details>
+<summary>lxd_containers</summary>
 
 Any actions with the container. Actions: create, start, stop and delete container
 
@@ -709,9 +985,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_containers({"name": "", "action": ""})```
+ ```response = fhq.lxd_containers({
+    "name": "",
+    "action": ""
+})```
 
- ## lxd_exec
+</details>
+
+<details>
+<summary>lxd_exec</summary>
 
 Exec command in the container with name.
 
@@ -725,9 +1007,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_exec({"name": "", "command": ""})```
+ ```response = fhq.lxd_exec({
+    "name": "",
+    "command": ""
+})```
 
- ## lxd_file
+</details>
+
+<details>
+<summary>lxd_file</summary>
 
 Pull, push, delete file inside the container.
 
@@ -742,9 +1030,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_file({"name": "", "action": "", "path": ""})```
+ ```response = fhq.lxd_file({
+    "name": "",
+    "action": "",
+    "path": ""
+})```
 
- ## lxd_import_container
+</details>
+
+<details>
+<summary>lxd_import_container</summary>
 
 Import container from json configuration.
 
@@ -757,9 +1052,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_import_container({"config": ""})```
+ ```response = fhq.lxd_import_container({
+    "config": ""
+})```
 
- ## lxd_import_service_from_zip
+</details>
+
+<details>
+<summary>lxd_import_service_from_zip</summary>
 
 Import Service from zip.
 
@@ -772,9 +1072,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_import_service_from_zip({"zip_file": ""})```
+ ```response = fhq.lxd_import_service_from_zip({
+    "zip_file": ""
+})```
 
- ## lxd_info
+</details>
+
+<details>
+<summary>lxd_info</summary>
 
 Get information about the orhestra, containers.
 
@@ -788,9 +1093,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_info({"name": "", "get": ""})```
+ ```response = fhq.lxd_info({
+    "name": "",
+    "get": ""
+})```
 
- ## lxd_list
+</details>
+
+<details>
+<summary>lxd_list</summary>
 
 Get information about all containers.
 
@@ -802,9 +1113,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_list({})```
+ ```response = fhq.lxd_list({
 
- ## lxd_open_port
+})```
+
+</details>
+
+<details>
+<summary>lxd_open_port</summary>
 
 Opens the container port.
 
@@ -819,9 +1135,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_open_port({"name": "", "port": 0, "protocol": ""})```
+ ```response = fhq.lxd_open_port({
+    "name": "",
+    "port": 0,
+    "protocol": ""
+})```
 
- ## lxd_start_service
+</details>
+
+<details>
+<summary>lxd_start_service</summary>
 
 Start service.
 
@@ -834,9 +1157,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.lxd_start_service({"name": ""})```
+ ```response = fhq.lxd_start_service({
+    "name": ""
+})```
 
- ## mail_info
+</details>
+
+<details>
+<summary>mail_info</summary>
 
 This method Will be return info of mail
 
@@ -848,9 +1176,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.mail_info({})```
+ ```response = fhq.mail_info({
 
- ## mail_send
+})```
+
+</details>
+
+<details>
+<summary>mail_send</summary>
 
 Mail Send
 
@@ -865,9 +1198,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.mail_send({"to": "", "subject": "", "body": ""})```
+ ```response = fhq.mail_send({
+    "to": "",
+    "subject": "",
+    "body": ""
+})```
 
- ## mails_list
+</details>
+
+<details>
+<summary>mails_list</summary>
 
 Mails list
 
@@ -884,9 +1224,18 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.mails_list({"filter_email": "", "filter_subject": "", "filter_message": "", "onpage": 10, "page": 0})```
+ ```response = fhq.mails_list({
+    "filter_email": "",
+    "filter_subject": "",
+    "filter_message": "",
+    "onpage": 10,
+    "page": 0
+})```
 
- ## public_info
+</details>
+
+<details>
+<summary>public_info</summary>
 
 Method return public information about server
 
@@ -898,9 +1247,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.public_info({})```
+ ```response = fhq.public_info({
 
- ## publiceventslist
+})```
+
+</details>
+
+<details>
+<summary>publiceventslist</summary>
 
 Return list of public events
 
@@ -914,9 +1268,15 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.publiceventslist({"page": 0, "onpage": 10})```
+ ```response = fhq.publiceventslist({
+    "page": 0,
+    "onpage": 10
+})```
 
- ## quest
+</details>
+
+<details>
+<summary>quest</summary>
 
 Update the quest info
 
@@ -929,9 +1289,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quest({"questid": 0})```
+ ```response = fhq.quest({
+    "questid": 0
+})```
 
- ## quest_delete
+</details>
+
+<details>
+<summary>quest_delete</summary>
 
 Method for delete quest
 
@@ -944,9 +1309,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quest_delete({"questid": 0})```
+ ```response = fhq.quest_delete({
+    "questid": 0
+})```
 
- ## quest_pass
+</details>
+
+<details>
+<summary>quest_pass</summary>
 
 Quest pass
 
@@ -960,9 +1330,15 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quest_pass({"questid": 0, "answer": ""})```
+ ```response = fhq.quest_pass({
+    "questid": 0,
+    "answer": ""
+})```
 
- ## quest_proposal
+</details>
+
+<details>
+<summary>quest_proposal</summary>
 
 Add quest proposal
 
@@ -982,9 +1358,21 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quest_proposal({"gameid": 0, "name": "", "text": "", "score": 0, "author": "", "subject": "", "answer": "", "answer_format": ""})```
+ ```response = fhq.quest_proposal({
+    "gameid": 0,
+    "name": "",
+    "text": "",
+    "score": 0,
+    "author": "",
+    "subject": "",
+    "answer": "",
+    "answer_format": ""
+})```
 
- ## quest_statistics
+</details>
+
+<details>
+<summary>quest_statistics</summary>
 
 Mehtod will be return quest public statistics
 
@@ -997,9 +1385,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quest_statistics({"questid": 0})```
+ ```response = fhq.quest_statistics({
+    "questid": 0
+})```
 
- ## quest_update
+</details>
+
+<details>
+<summary>quest_update</summary>
 
 Update the quest info
 
@@ -1023,9 +1416,25 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quest_update({"questid": 0, "name": "", "gameid": 0, "text": "", "score": 0, "subject": "", "author": "", "answer": "", "answer_format": "", "state": "", "description_state": "", "copyright": ""})```
+ ```response = fhq.quest_update({
+    "questid": 0,
+    "name": "",
+    "gameid": 0,
+    "text": "",
+    "score": 0,
+    "subject": "",
+    "author": "",
+    "answer": "",
+    "answer_format": "",
+    "state": "",
+    "description_state": "",
+    "copyright": ""
+})```
 
- ## quests
+</details>
+
+<details>
+<summary>quests</summary>
 
 Method will be returned quest list
 
@@ -1038,9 +1447,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests({"subject": ""})```
+ ```response = fhq.quests({
+    "subject": ""
+})```
 
- ## quests_proposal_list
+</details>
+
+<details>
+<summary>quests_proposal_list</summary>
 
 Quests proposal list
 
@@ -1054,9 +1468,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests_proposal_list({"onpage": 10, "page": 0})```
+ ```response = fhq.quests_proposal_list({
+    "onpage": 10,
+    "page": 0
+})```
 
- ## quests_subjects
+</details>
+
+<details>
+<summary>quests_subjects</summary>
 
 Method returned list of quests by subjects
 
@@ -1068,9 +1488,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests_subjects({})```
+ ```response = fhq.quests_subjects({
 
- ## quests_writeups_delete
+})```
+
+</details>
+
+<details>
+<summary>quests_writeups_delete</summary>
 
 This method will be remove writeup
 
@@ -1083,9 +1508,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests_writeups_delete({"writeupid": 0})```
+ ```response = fhq.quests_writeups_delete({
+    "writeupid": 0
+})```
 
- ## quests_writeups_list
+</details>
+
+<details>
+<summary>quests_writeups_list</summary>
 
 This method will be returned list of writeups by questid
 
@@ -1098,9 +1528,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests_writeups_list({"questid": 0})```
+ ```response = fhq.quests_writeups_list({
+    "questid": 0
+})```
 
- ## quests_writeups_proposal
+</details>
+
+<details>
+<summary>quests_writeups_proposal</summary>
 
 This method will be add writeup from authorized user
 
@@ -1114,9 +1549,15 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests_writeups_proposal({"questid": 0, "writeup_link": ""})```
+ ```response = fhq.quests_writeups_proposal({
+    "questid": 0,
+    "writeup_link": ""
+})```
 
- ## quests_writeups_update
+</details>
+
+<details>
+<summary>quests_writeups_update</summary>
 
 This method will be update writeup approve now
 
@@ -1130,9 +1571,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.quests_writeups_update({"writeupid": 0, "approve": ""})```
+ ```response = fhq.quests_writeups_update({
+    "writeupid": 0,
+    "approve": ""
+})```
 
- ## registration
+</details>
+
+<details>
+<summary>registration</summary>
 
 Method for registration
 
@@ -1146,9 +1593,15 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### example call method 
 
- ```response = fhq.registration({"email": "", "university": ""})```
+ ```response = fhq.registration({
+    "email": "",
+    "university": ""
+})```
 
- ## scoreboard
+</details>
+
+<details>
+<summary>scoreboard</summary>
 
 Method return scoreboard
 
@@ -1162,9 +1615,15 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.scoreboard({"page": 0, "onpage": 10})```
+ ```response = fhq.scoreboard({
+    "page": 0,
+    "onpage": 10
+})```
 
- ## server_api
+</details>
+
+<details>
+<summary>server_api</summary>
 
 This method Will be return list of all handlers
 
@@ -1176,9 +1635,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.server_api({})```
+ ```response = fhq.server_api({
 
- ## server_info
+})```
+
+</details>
+
+<details>
+<summary>server_info</summary>
 
 Return server private information
 
@@ -1190,9 +1654,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.server_info({})```
+ ```response = fhq.server_info({
 
- ## server_settings
+})```
+
+</details>
+
+<details>
+<summary>server_settings</summary>
 
 Return server settings
 
@@ -1204,9 +1673,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.server_settings({})```
+ ```response = fhq.server_settings({
 
- ## server_settings_update
+})```
+
+</details>
+
+<details>
+<summary>server_settings_update</summary>
 
 Update server settings
 
@@ -1220,9 +1694,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.server_settings_update({"name": "", "value": ""})```
+ ```response = fhq.server_settings_update({
+    "name": "",
+    "value": ""
+})```
 
- ## token
+</details>
+
+<details>
+<summary>token</summary>
 
 Method for login by token
 
@@ -1235,9 +1715,14 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### example call method 
 
- ```response = fhq.token({"token": ""})```
+ ```response = fhq.token({
+    "token": ""
+})```
 
- ## updateuserlocation
+</details>
+
+<details>
+<summary>updateuserlocation</summary>
 
 This method will be try update user location by lastip
 
@@ -1250,9 +1735,14 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.updateuserlocation({"userid": 0})```
+ ```response = fhq.updateuserlocation({
+    "userid": 0
+})```
 
- ## useful_links_add
+</details>
+
+<details>
+<summary>useful_links_add</summary>
 
 Method for add new useful link
 
@@ -1267,9 +1757,16 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.useful_links_add({"url": "", "description": "", "author": ""})```
+ ```response = fhq.useful_links_add({
+    "url": "",
+    "description": "",
+    "author": ""
+})```
 
- ## useful_links_delete
+</details>
+
+<details>
+<summary>useful_links_delete</summary>
 
 Method for delete link by admin
 
@@ -1284,9 +1781,16 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.useful_links_delete({"url": "", "description": "", "author": ""})```
+ ```response = fhq.useful_links_delete({
+    "url": "",
+    "description": "",
+    "author": ""
+})```
 
- ## useful_links_list
+</details>
+
+<details>
+<summary>useful_links_list</summary>
 
 Method will be return list of useful links
 
@@ -1299,9 +1803,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.useful_links_list({"filter": ""})```
+ ```response = fhq.useful_links_list({
+    "filter": ""
+})```
 
- ## useful_links_star
+</details>
+
+<details>
+<summary>useful_links_star</summary>
 
 Method set star
 
@@ -1313,9 +1822,14 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.useful_links_star({})```
+ ```response = fhq.useful_links_star({
 
- ## useful_links_unstar
+})```
+
+</details>
+
+<details>
+<summary>useful_links_unstar</summary>
 
 Method set unstar
 
@@ -1327,9 +1841,14 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.useful_links_unstar({})```
+ ```response = fhq.useful_links_unstar({
 
- ## useful_links_update
+})```
+
+</details>
+
+<details>
+<summary>useful_links_update</summary>
 
 Method for update useful link
 
@@ -1345,9 +1864,17 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.useful_links_update({"url": "", "description": "", "author": "", "status": ""})```
+ ```response = fhq.useful_links_update({
+    "url": "",
+    "description": "",
+    "author": "",
+    "status": ""
+})```
 
- ## user
+</details>
+
+<details>
+<summary>user</summary>
 
 Return user info
 
@@ -1360,9 +1887,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.user({"userid": 0})```
+ ```response = fhq.user({
+    "userid": 0
+})```
 
- ## user_change_password
+</details>
+
+<details>
+<summary>user_change_password</summary>
 
 This method for change user password
 
@@ -1376,9 +1908,15 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.user_change_password({"password_old": "", "password_new": ""})```
+ ```response = fhq.user_change_password({
+    "password_old": "",
+    "password_new": ""
+})```
 
- ## user_delete
+</details>
+
+<details>
+<summary>user_delete</summary>
 
 Method for deleting a user
 
@@ -1392,9 +1930,15 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.user_delete({"userid": 0, "password": ""})```
+ ```response = fhq.user_delete({
+    "userid": 0,
+    "password": ""
+})```
 
- ## user_reset_password
+</details>
+
+<details>
+<summary>user_reset_password</summary>
 
 Method for reset password
 
@@ -1407,9 +1951,14 @@ Access: unauthorized - **yes**,  user - **no**,  admin - **no**
 
  #### example call method 
 
- ```response = fhq.user_reset_password({"email": ""})```
+ ```response = fhq.user_reset_password({
+    "email": ""
+})```
 
- ## user_skills
+</details>
+
+<details>
+<summary>user_skills</summary>
 
 Return user skills info
 
@@ -1422,9 +1971,14 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.user_skills({"userid": 0})```
+ ```response = fhq.user_skills({
+    "userid": 0
+})```
 
- ## user_update
+</details>
+
+<details>
+<summary>user_update</summary>
 
 Update user info
 
@@ -1441,9 +1995,18 @@ Access: unauthorized - **no**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.user_update({"userid": 0, "nick": "", "university": "", "about": "", "country": ""})```
+ ```response = fhq.user_update({
+    "userid": 0,
+    "nick": "",
+    "university": "",
+    "about": "",
+    "country": ""
+})```
 
- ## users
+</details>
+
+<details>
+<summary>users</summary>
 
 Method return list of users
 
@@ -1459,9 +2022,17 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.users({"filter_text": "", "filter_role": "", "onpage": 10, "page": 0})```
+ ```response = fhq.users({
+    "filter_text": "",
+    "filter_role": "",
+    "onpage": 10,
+    "page": 0
+})```
 
- ## users_add
+</details>
+
+<details>
+<summary>users_add</summary>
 
 Method for add new user
 
@@ -1479,9 +2050,19 @@ Access: unauthorized - **no**,  user - **no**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.users_add({"uuid": "", "email": "", "nick": "", "password": "", "role": "", "university": ""})```
+ ```response = fhq.users_add({
+    "uuid": "",
+    "email": "",
+    "nick": "",
+    "password": "",
+    "role": "",
+    "university": ""
+})```
 
- ## users_info
+</details>
+
+<details>
+<summary>users_info</summary>
 
 Return user info
 
@@ -1494,5 +2075,9 @@ Access: unauthorized - **yes**,  user - **yes**,  admin - **yes**
 
  #### example call method 
 
- ```response = fhq.users_info({"uuid": 0})```
+ ```response = fhq.users_info({
+    "uuid": 0
+})```
+
+</details>
 
