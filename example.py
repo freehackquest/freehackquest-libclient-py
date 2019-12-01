@@ -1,15 +1,3 @@
-# libfhqcli-py
-
-FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehackquest/fhq-server.git](https://github.com/freehackquest/fhq-server.git)
-
-## Install
-```
-pip install libfhqcli --upgrade
-```
-
-## Example code
-
-```
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
@@ -29,6 +17,4 @@ if resp['result'] == 'FAIL':
     print('Could not login as user (1)')
 
 print("user info: " + str(resp))
-```
 
-Full description API here: [API.md](./API.md)
