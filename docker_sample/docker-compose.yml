@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  libfhqcli_py:
+    build: .
+    volumes:
+      - "./data:/usr/src/app/data"
+    networks:
+      - libfhqcli_py_net
+
+networks:
+  libfhqcli_py_net:
+    driver: bridge
