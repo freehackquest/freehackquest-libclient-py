@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from libfhqcli import FHQClient
+from libfreehackquestclient import FreeHackQuestClient
 
-fhq = FHQClient("ws://freehackquest.com:1234/ws-api/")
+
+fhq = FreeHackQuestClient("ws://freehackquest.com:1234/ws-api/")
 
 q = fhq.quest({"questid": 148})
 print("quest: " + str(q))

@@ -1,1 +1,1 @@
-libfhqcli>=0.2.23
+libfreehackquestclient>=0.2.23
