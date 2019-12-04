@@ -5,9 +5,9 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='libfreehackquestclient',
-    version='0.2.23',
+    version='0.2.24',
     install_requires=['websocket-client>=0.56.0', 'requests>=2.21.0'],
-    keywords=['ctf', 'fhq', 'fhq-server', 'libfhq-client', 'jeopardy', 'freehackquest'],
+    keywords=['ctf', 'fhq', 'fhq-server', 'libfreehackquest-client', 'jeopardy', 'freehackquest'],
     author='FreeHackQuest Team',
     author_email='freehackquest@gmail.com',
     description='FreeHackQuest Python Client Library for fhq-server',
