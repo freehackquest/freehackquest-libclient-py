@@ -1,10 +1,10 @@
-# libfhqcli-py
+# libfreehackquest-client-py
 
 FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehackquest/fhq-server.git](https://github.com/freehackquest/fhq-server.git)
 
 ## Install
 ```
-pip3 install libfhqcli --upgrade
+pip3 install libfreehackquestclient --upgrade
 ```
 
 ## Example code
@@ -13,9 +13,9 @@ pip3 install libfhqcli --upgrade
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from libfhqcli import FHQClient
+from libfreehackquestclient import FreeHackQuestClient
 
-fhq = FHQClient("ws://freehackquest.com:1234/ws-api/")
+fhq = FreeHackQuestClient("ws://freehackquest.com:1234/ws-api/")
 
 q = fhq.quest({"questid": 148})
 print("quest: " + str(q))
