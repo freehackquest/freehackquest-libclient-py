@@ -1,6 +1,6 @@
 # libfreehackquest-client-py
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/freehackquest/libfreehackquest-client-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/libfreehackquest-client-py/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/freehackquest/libfreehackquest-client-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/libfreehackquest-client-py/context:python)
+![PyPI](https://img.shields.io/pypi/v/libfreehackquestclient) [![Total alerts](https://img.shields.io/lgtm/alerts/g/freehackquest/libfreehackquest-client-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/libfreehackquest-client-py/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/freehackquest/libfreehackquest-client-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/libfreehackquest-client-py/context:python)
 
 
 FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehackquest/fhq-server.git](https://github.com/freehackquest/fhq-server.git)
