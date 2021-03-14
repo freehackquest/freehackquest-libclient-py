@@ -11,7 +11,7 @@ print("quest: " + str(q))
 
 # or "ws://freehackquest.com:1234" or "ws://freehackquest.com/ws-api/"
 resp = fhq.login({"email": "admin", "password": "admin"})
-if resp == None:
+if resp is None:
     print('Could not login as user (1)')
 
 if resp['result'] == 'FAIL':
