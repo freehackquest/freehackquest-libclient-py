@@ -8,13 +8,13 @@ FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehack
 ## Install
 
 ```
-pip3 install freehackquestclient
+pip3 install freehackquest-libclient-py
 ```
 
 or
 
 ```
-pip3 install freehackquestclient --upgrade
+pip3 install freehackquest-libclient-py --upgrade
 ```
 
 ## Example code
