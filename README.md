@@ -1,13 +1,20 @@
-# libfreehackquest-client-py
+# freehackquest-libcliet-py
 
-![PyPI](https://img.shields.io/pypi/v/libfreehackquestclient) [![Total alerts](https://img.shields.io/lgtm/alerts/g/freehackquest/libfreehackquest-client-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/libfreehackquest-client-py/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/freehackquest/libfreehackquest-client-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/libfreehackquest-client-py/context:python)
+![PyPI](https://img.shields.io/pypi/v/freehackquest-libclient-py) [![Total alerts](https://img.shields.io/lgtm/alerts/g/freehackquest/freehackquest-libclient-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/freehackquest-libclient-py/alerts/) [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/freehackquest/freehackquest-libclient-py.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/freehackquest/freehackquest-libclient-py/context:python)
 
 
 FreeHackQuest Python Client Library for fhq-server: [https://github.com/freehackquest/fhq-server.git](https://github.com/freehackquest/fhq-server.git)
 
 ## Install
+
 ```
-pip3 install libfreehackquestclient --upgrade
+pip3 install freehackquestclient
+```
+
+or
+
+```
+pip3 install freehackquestclient --upgrade
 ```
 
 ## Example code
@@ -16,7 +23,7 @@ pip3 install libfreehackquestclient --upgrade
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from libfreehackquestclient import FreeHackQuestClient
+from freehackquest_libclient_py import FreeHackQuestClient
 
 fhq = FreeHackQuestClient("ws://freehackquest.com:1234/ws-api/")
 

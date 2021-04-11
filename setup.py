@@ -4,8 +4,8 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='libfreehackquestclient',
-    version='v0.2.36',
+    name='freehackquest_libclient_py',
+    version='v0.2.39',
     install_requires=['websocket-client>=0.56.0', 'requests>=2.21.0'],
     keywords=['ctf', 'fhq', 'fhq-server', 'libfreehackquest-client', 'jeopardy', 'freehackquest'],
     author='FreeHackQuest Team',
@@ -13,7 +13,7 @@ setuptools.setup(
     description='FreeHackQuest Python Client Library for fhq-server',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/freehackquest/libfreehackquest-client-py',
+    url='https://github.com/freehackquest/freehackquest-libclient-py',
     packages=['libfreehackquestclient'],
     classifiers=(
         'Programming Language :: Python :: 3',
